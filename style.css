@@ -1,0 +1,36 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	color: blue;
+}
+
+.section-grid {
+	background-color: #121212; /* untuk mengubah warna background dari suatu element */
+	color: #fff; /* untuk mengubah warna text dari suatu element */
+	text-align: center;
+	width: 50vw;
+	height: 100vh;
+	margin: 50px auto;
+	border: 10px solid red;
+	padding: 20px;
+}
+
+#second-section{
+	background-color: red;
+}
+/* Jika lebar layar kita kurang dari 600px */
+@media only screen and (max-width:600px){
+	#second-section{
+		width: 100vw;
+	}
+}
+
+/* Jika Lebar Layar diatas 601px maka */
+@media only screen and (min-width: 601px){
+	#first-section{
+		width: 100vw;
+	}
+}
