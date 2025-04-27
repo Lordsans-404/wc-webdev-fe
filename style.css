@@ -18,11 +18,55 @@ h1 {
 	padding: 20px;
 }
 
+#first-section{
+	position: relative;
+}
+
+#profile-box{
+	position: sticky;
+	top: 0px;
+}
+
 #second-section{
 	background-color: red;
 }
+
+
+#flex-box{
+	display: flex;
+	background-color: whitesmoke;
+	justify-content: center;
+	height: 40px;
+	align-items: center;
+}
+
+.flex-items{
+	background-color: forestgreen;
+	width: 30px;
+	height: 20px;
+}
+
+#grid-box{
+	display: grid;
+	grid-template-columns: repeat(8, 1fr);
+	grid-template-rows: repeat(4, 1fr);
+	background-color: yellowgreen;
+}
+
+#items-a{
+	grid-area: 1 / 1 / 4 / 3;
+	place-self: end center;
+}
+#items-b{
+	grid-row: 1/5;
+}
+
+#items-c{
+	grid-column: 4 / 6;
+}
+
 /* Jika lebar layar kita kurang dari 600px */
-@media only screen and (max-width:600px){
+@media only screen (min-width: 400px) and (max-width:600px){
 	#second-section{
 		width: 100vw;
 	}
